@@ -7,310 +7,25 @@
 
   <title>Heather (Hyerin) Im</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Inter, sans-serif;
-      background: #ffffff;
-      color: #111111;
-      line-height: 1.6;
-    }
+  <!-- Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    .container {
-      max-width: 980px;
-      margin: 0 auto;
-      padding: 70px 28px 100px;
-    }
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  >
 
-    /* HEADER */
+  <!-- Shared stylesheet -->
+  <link rel="stylesheet" href="style.css">
 
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 90px;
-    }
-
-    .name {
-      font-size: 20px;
-      font-weight: 600;
-    }
-
-    nav a {
-      margin-left: 24px;
-      text-decoration: none;
-      color: #555;
-      font-size: 14px;
-    }
-
-    nav a:hover {
-      color: #000;
-    }
-
-    #scramble-name {
-      display: inline-block;
-      min-width: 3.8em;
-    }
-
-    /* INTRO */
-
-    .intro {
-      display: grid;
-      grid-template-columns: 1fr 240px;
-      gap: 60px;
-      align-items: center;
-      margin-bottom: 100px;
-    }
-
-    h1 {
-      font-size: 32px;
-      font-weight: 500;
-      color: #111111;
-      margin: 0 0 28px;
-      letter-spacing: 0;
-    }
-
-    .intro p {
-      font-size: 18px;
-      color: #444;
-      max-width: 650px;
-    }
-
-    .profile {
-      width: 100%;
-      aspect-ratio: 3 / 4;
-      object-fit: cover;
-      background: #f2f2f2;
-      border-radius: 8px;
-    }
-
-    .highlight {
-      background: linear-gradient(
-        transparent 65%,
-        #dcecff 65%
-      );
-    }
-
-    /* SECTIONS */
-
-    section {
-      margin-top: 90px;
-    }
-
-    h2 {
-      font-size: 18px;
-      font-weight: 600;
-      border-bottom: 1px solid #ddd;
-      padding-bottom: 12px;
-      margin-bottom: 30px;
-    }
-
-    /* PROJECTS */
-
-    .project {
-      display: grid;
-      grid-template-columns: 240px 1fr;
-      gap: 28px;
-      margin-bottom: 40px;
-    }
-
-    .project img {
-  width: 240px;
-  height: 150px;
-  object-fit: cover;
-  background: #f2f2f2;
-  border-radius: 8px;
-  border: 1px solid rgba(0, 0, 0, 0.08);
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
-
-  transition: transform 0.35s ease, box-shadow 0.35s ease;
-}
-
-.project:hover img {
-  transform: translateY(-4px) scale(1.025);
-  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.10);
-}
-    
-    .project-tag {
-      margin-bottom: 8px;
-      font-size: 13px;
-      color: #777;
-    }
-
-    .project h3 {
-      margin: 0 0 8px;
-      font-size: 16px;
-      font-weight: normal;
-    }
-
-    .project p {
-      margin: 0;
-      font-size: 16px;
-      color: #555;
-    }
-
-    .project-link {
-      display: inline-block;
-      margin-top: 12px;
-      font-size: 15px;
-      color: #111;
-      text-decoration: none;
-      border-bottom: 1px solid #111;
-    }
-
-    .project-link:hover {
-      opacity: 0.5;
-    }
-
-    /* NEWS */
-
-    .news-item {
-      display: grid;
-      grid-template-columns: 110px 1fr;
-      gap: 20px;
-      margin-bottom: 18px;
-    }
-
-    .date {
-      color: #888;
-      font-size: 14px;
-    }
-
-    /* EXPERIENCE */
-
-    .experience-section {
-      margin-top: 100px;
-    }
-
-    .experience-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
-    }
-
-    .experience-card {
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      padding: 20px;
-    }
-
-    .experience-card h3 {
-      margin: 0 0 20px;
-      font-size: 18px;
-      font-weight: 600;
-    }
-
-    .experience-item {
-      padding: 16px 0;
-      border-top: 1px solid #e5e5e5;
-    }
-
-    .experience-item strong {
-      font-size: 16px;
-      font-weight: 600;
-    }
-
-    .experience-item span {
-      float: right;
-      font-size: 16px;
-      color: #888;
-    }
-
-    .experience-item p {
-      margin: 5px 0 0;
-      font-size: 16px;
-      color: #666;
-    }
-
-    .institution {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .institution img {
-      width: 24px;
-      height: 24px;
-      object-fit: contain;
-    }
-
-    /* FOOTER */
-
-    footer {
-      margin-top: 100px;
-      padding-top: 30px;
-      border-top: 1px solid #eee;
-      color: #888;
-      font-size: 13px;
-    }
-
-    a {
-      color: inherit;
-    }
-
-    /* MOBILE */
-
-    @media (max-width: 700px) {
-
-      .container {
-        padding: 40px 20px 70px;
-      }
-
-      header {
-        margin-bottom: 60px;
-      }
-
-      nav {
-        display: none;
-      }
-
-      .intro {
-        grid-template-columns: 1fr;
-        gap: 30px;
-      }
-
-      h1 {
-        font-size: 38px;
-      }
-
-      .profile {
-        width: 220px;
-      }
-
-      .project {
-        grid-template-columns: 1fr;
-      }
-
-      .project img {
-        width: 100%;
-        height: auto;
-        aspect-ratio: 16 / 10;
-      }
-
-      .news-item {
-        grid-template-columns: 1fr;
-        gap: 3px;
-      }
-
-      .experience-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .experience-item span {
-        float: none;
-        display: block;
-        margin-top: 3px;
-      }
-    }
-  </style>
 </head>
 
 
-
-  
 <body>
 
   <div class="container">
+
 
     <!-- HEADER -->
 
@@ -330,13 +45,13 @@
           href="https://www.instagram.com/heatherlim.studio/"
           target="_blank"
         >
-         
           CV
         </a>
 
       </nav>
 
     </header>
+
 
 
     <main>
@@ -349,7 +64,7 @@
         <div>
 
           <h1>
-          Hi, I'm <span id="scramble-name">Heather</span>
+            Hi, I'm <span id="scramble-name">Heather</span>
           </h1>
 
           <p>
@@ -357,9 +72,13 @@
             <span class="highlight">
               human-AI interaction and emerging technologies.
             </span>
-<br>
-            I turn emerging technical capabilities and user insights into 
-              <span class="highlight"> intuitive interactions, prototypes, and product experiences. </span>
+
+            <br>
+
+            I turn emerging technical capabilities and user insights into
+            <span class="highlight">
+              intuitive interactions, prototypes, and product experiences.
+            </span>
           </p>
 
         </div>
@@ -386,6 +105,7 @@
         <h2>Selected Work</h2>
 
 
+
         <!-- NIANTIC SPATIAL -->
 
         <div class="project">
@@ -398,7 +118,7 @@
           <div>
 
             <div class="project-tag">
-              ✶ Niantic · 2023-2025
+              ✶ Niantic · 2023–2025
             </div>
 
             <h3>
@@ -406,14 +126,14 @@
             </h3>
 
             <p>
-             Designed developer and consumer experiences across Niantic’s spatial computing ecosystem, 
-              including location discovery, AR localization, developer tools, and cross-device workflows.
+              Designed developer and consumer experiences across Niantic’s
+              spatial computing ecosystem, including location discovery,
+              AR localization, developer tools, and cross-device workflows.
             </p>
 
             <a
-              href="https://www.tandfonline.com/doi/abs/10.1080/10447318.2026.2727769"
+              href="niantic-spatial.html"
               class="project-link"
-              target="_blank"
             >
               View case study →
             </a>
@@ -477,8 +197,7 @@
           <div>
 
             <div class="project-tag">
-              ✶ International Journal of Human–Computer Interaction,
-              1–33 · 2026
+              ✶ International Journal of Human–Computer Interaction · 2026
             </div>
 
             <h3>
@@ -518,9 +237,9 @@
           <div>
 
             <div class="project-tag">
-              ✶ In Proceedings of IntelliSys 2024. Springer, Cham. · 2024
+              ✶ IntelliSys · 2024
               <br>
-              ✶ Earlier work presented at CHI 2022 Extended Abstracts · 2022
+              ✶ CHI Extended Abstracts · 2022
             </div>
 
             <h3>
@@ -535,11 +254,10 @@
             </p>
 
             <a
-              href="https://link.springer.com/chapter/10.1007/978-3-031-66336-9_44"
+              href="virfie.html"
               class="project-link"
-              target="_blank"
             >
-              View project →
+              View case study →
             </a>
 
           </div>
@@ -548,34 +266,33 @@
 
 
 
-        <!-- MEMETERVIEW -->
+        <!-- AI EXPLORATIONS -->
 
         <div class="project">
 
           <img
             src="assets/meme-img.png"
-            alt="Memeterview project"
+            alt="AI Explorations"
           />
 
           <div>
 
             <div class="project-tag">
-              AI Prototyping · Generative Media · 2022-
+              ✶ AI Prototyping · Generative Media · 2022–Present
             </div>
 
             <h3>
-              AI Experiments
+              AI Explorations
             </h3>
 
             <p>
-              Exploring new ways of creating and interacting with AI through rapid prototypes, 
-              generative media, and creative experiments.
+              Exploring new ways of creating and interacting with AI through
+              rapid prototypes, generative media, and creative experiments.
             </p>
 
             <a
-              href="https://koasas.kaist.ac.kr/handle/10203/344695"
+              href="ai-explorations.html"
               class="project-link"
-              target="_blank"
             >
               Explore experiments →
             </a>
@@ -751,6 +468,7 @@
 
           </div>
 
+
         </div>
 
       </section>
@@ -781,33 +499,45 @@
 
 
   </div>
-<script>
-  const element = document.getElementById("scramble-name");
-  const finalText = "Heather";
-  const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-  
-  let iteration = 0;
 
-  const interval = setInterval(() => {
-    element.textContent = finalText
-      .split("")
-      .map((letter, index) => {
-        if (index < iteration) {
-          return finalText[index];
-        }
 
-        return chars[Math.floor(Math.random() * chars.length)];
-      })
-      .join("");
 
-    if (iteration >= finalText.length) {
-      clearInterval(interval);
-    }
+  <!-- NAME SCRAMBLE -->
 
-    iteration += 0.5;
-  }, 50);
-</script>
-  
+  <script>
+
+    const element = document.getElementById("scramble-name");
+    const finalText = "Heather";
+    const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+
+    let iteration = 0;
+
+    const interval = setInterval(() => {
+
+      element.textContent = finalText
+        .split("")
+        .map((letter, index) => {
+
+          if (index < iteration) {
+            return finalText[index];
+          }
+
+          return chars[Math.floor(Math.random() * chars.length)];
+
+        })
+        .join("");
+
+      if (iteration >= finalText.length) {
+        clearInterval(interval);
+      }
+
+      iteration += 0.5;
+
+    }, 50);
+
+  </script>
+
+
 </body>
 
 </html>
