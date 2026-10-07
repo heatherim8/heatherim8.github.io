@@ -119,6 +119,26 @@
       box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
     }
 
+    .project-card {
+  transition: transform 0.25s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+}
+
+.project-image {
+  overflow: hidden;
+}
+
+.project-image img {
+  transition: transform 0.4s ease;
+}
+
+.project-card:hover .project-image img {
+  transform: scale(1.025);
+}
+    
     .project-tag {
       margin-bottom: 8px;
       font-size: 13px;
@@ -294,6 +314,8 @@
 </head>
 
 
+
+  
 <body>
 
   <div class="container">
