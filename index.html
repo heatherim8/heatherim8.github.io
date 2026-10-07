@@ -47,6 +47,11 @@
       color: #000;
     }
 
+    #scramble-name {
+      display: inline-block;
+      min-width: 3.8em;
+    }
+
     /* INTRO */
 
     .intro {
@@ -350,34 +355,9 @@
         <div>
 
           <h1>
-            Hi, I'm Heather
+          Hi, I'm <span id="scramble-name">Heather</span>
           </h1>
-<script>
-  const element = document.getElementById("scramble-name");
-  const finalText = "Heather";
-  const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-  
-  let iteration = 0;
 
-  const interval = setInterval(() => {
-    element.textContent = finalText
-      .split("")
-      .map((letter, index) => {
-        if (index < iteration) {
-          return finalText[index];
-        }
-
-        return chars[Math.floor(Math.random() * chars.length)];
-      })
-      .join("");
-
-    if (iteration >= finalText.length) {
-      clearInterval(interval);
-    }
-
-    iteration += 0.5;
-  }, 50);
-</script>
           <p>
             I’m an interaction designer and UX researcher exploring
             <span class="highlight">
@@ -807,7 +787,33 @@
 
 
   </div>
+<script>
+  const element = document.getElementById("scramble-name");
+  const finalText = "Heather";
+  const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+  
+  let iteration = 0;
 
+  const interval = setInterval(() => {
+    element.textContent = finalText
+      .split("")
+      .map((letter, index) => {
+        if (index < iteration) {
+          return finalText[index];
+        }
+
+        return chars[Math.floor(Math.random() * chars.length)];
+      })
+      .join("");
+
+    if (iteration >= finalText.length) {
+      clearInterval(interval);
+    }
+
+    iteration += 0.5;
+  }, 50);
+</script>
+  
 </body>
 
 </html>
