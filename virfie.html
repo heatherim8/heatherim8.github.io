@@ -7,232 +7,17 @@
 
   <title>Virfie — Heather (Hyerin) Im</title>
 
-  <style>
+  <!-- Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    /* =========================
-       GLOBAL — SAME AS INDEX
-    ========================== */
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  >
 
-    body {
-      margin: 0;
-      font-family: Inter, sans-serif;
-      background: #ffffff;
-      color: #111111;
-      line-height: 1.6;
-    }
-
-    .container {
-      max-width: 980px;
-      margin: 0 auto;
-      padding: 70px 28px 100px;
-    }
-
-    a {
-      color: inherit;
-    }
-
-
-    /* =========================
-       HEADER — SAME AS INDEX
-    ========================== */
-
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 90px;
-    }
-
-    .name {
-      font-size: 20px;
-      font-weight: 600;
-    }
-
-    .name a {
-      text-decoration: none;
-    }
-
-    nav a {
-      margin-left: 24px;
-      text-decoration: none;
-      color: #555;
-      font-size: 14px;
-    }
-
-    nav a:hover {
-      color: #000;
-    }
-
-
-    /* =========================
-       CASE STUDY HERO
-    ========================== */
-
-    .case-hero {
-      margin-bottom: 100px;
-    }
-
-    .project-tag {
-      margin-bottom: 12px;
-      font-size: 13px;
-      color: #777;
-    }
-
-    .case-hero h1 {
-      font-size: 32px;
-      font-weight: 500;
-      letter-spacing: 0;
-      line-height: 1.3;
-      margin: 0 0 12px;
-    }
-
-    .case-subtitle {
-      font-size: 18px;
-      font-weight: 400;
-      color: #555;
-      max-width: 720px;
-      margin: 0 0 32px;
-    }
-
-    .case-meta {
-      display: flex;
-      gap: 50px;
-      margin: 40px 0;
-      font-size: 14px;
-    }
-
-    .case-meta-item {
-      max-width: 260px;
-    }
-
-    .case-meta-label {
-      display: block;
-      color: #888;
-      font-size: 13px;
-      margin-bottom: 4px;
-    }
-
-
-    /* =========================
-       IMAGES
-    ========================== */
-
-    .case-hero-image,
-    .case-image {
-      width: 100%;
-      height: auto;
-      display: block;
-      border-radius: 8px;
-      border: 1px solid rgba(0, 0, 0, 0.08);
-    }
-
-    .case-hero-image {
-      margin-top: 50px;
-    }
-
-
-    /* =========================
-       CASE STUDY SECTIONS
-    ========================== */
-
-    .case-section {
-      margin-top: 100px;
-    }
-
-    .case-section h2 {
-      font-size: 18px;
-      font-weight: 600;
-      border-bottom: 1px solid #ddd;
-      padding-bottom: 12px;
-      margin-bottom: 30px;
-    }
-
-    .case-section h3 {
-      font-size: 18px;
-      font-weight: 500;
-      margin: 40px 0 12px;
-    }
-
-    .case-section p {
-      max-width: 720px;
-      margin: 0 0 20px;
-      font-size: 16px;
-      color: #555;
-    }
-
-    .case-image {
-      margin-top: 36px;
-    }
-
-
-    /* =========================
-       BACK LINK
-    ========================== */
-
-    .back-link {
-      display: inline-block;
-      margin-bottom: 50px;
-      font-size: 15px;
-      color: #111;
-      text-decoration: none;
-      border-bottom: 1px solid #111;
-    }
-
-    .back-link:hover {
-      opacity: 0.5;
-    }
-
-
-    /* =========================
-       FOOTER
-    ========================== */
-
-    footer {
-      margin-top: 100px;
-      padding-top: 30px;
-      border-top: 1px solid #eee;
-      color: #888;
-      font-size: 13px;
-    }
-
-
-    /* =========================
-       MOBILE
-    ========================== */
-
-    @media (max-width: 700px) {
-
-      .container {
-        padding: 40px 20px 70px;
-      }
-
-      header {
-        margin-bottom: 60px;
-      }
-
-      nav {
-        display: none;
-      }
-
-      .case-hero h1 {
-        font-size: 38px;
-      }
-
-      .case-meta {
-        flex-direction: column;
-        gap: 18px;
-      }
-
-      .case-hero {
-        margin-bottom: 70px;
-      }
-
-      .case-section {
-        margin-top: 70px;
-      }
-    }
-
-  </style>
+  <!-- Shared stylesheet -->
+  <link rel="stylesheet" href="style.css">
 
 </head>
 
@@ -262,7 +47,10 @@
           Email
         </a>
 
-        <a href="#" target="_blank">
+        <a
+          href="https://www.instagram.com/heatherlim.studio/"
+          target="_blank"
+        >
           CV
         </a>
 
@@ -296,30 +84,40 @@
         </h1>
 
         <p class="case-subtitle">
-          Enhancing remote togetherness through
-          user-created scenarios for virtual group selfies.
+          Enhancing remote togetherness with user-created scenarios
+          for virtual group selfies.
         </p>
 
+
+        <!-- PROJECT INFO -->
 
         <div class="case-meta">
 
           <div class="case-meta-item">
-            <span class="case-meta-label">Role</span>
+            <span class="case-meta-label">
+              Role
+            </span>
             Interaction Design · UX Research · Prototyping
           </div>
 
           <div class="case-meta-item">
-            <span class="case-meta-label">Context</span>
+            <span class="case-meta-label">
+              Context
+            </span>
             KAIST CIxD Lab
           </div>
 
           <div class="case-meta-item">
-            <span class="case-meta-label">Year</span>
+            <span class="case-meta-label">
+              Year
+            </span>
             2022–2024
           </div>
 
         </div>
 
+
+        <!-- HERO IMAGE -->
 
         <img
           src="assets/virfie/virfie-hero.jpg"
@@ -337,26 +135,49 @@
 
         <h2>Overview</h2>
 
+        <h3>
+          What happens to our sense of togetherness when being together
+          becomes a screen?
+        </h3>
+
         <p>
-          Virfie explores how virtual group selfies can support
-          creative expression, social connection, and a sense of
-          togetherness in remote settings.
+          As remote interaction becomes part of everyday life, physical
+          presence is increasingly translated into fragments — gestures,
+          gaze, movement, and attention mediated through a screen.
+          Virfie explores what is lost in this translation, and what new
+          forms of presence might emerge from it.
+        </p>
+
+        <p>
+          Through participatory research, we worked with participants to
+          identify what felt absent from remote encounters and imagine
+          alternative ways of being together. These explorations informed
+          a functional prototype that uses position, gesture, synchrony,
+          and shared attention to construct a collective virtual space.
+        </p>
+
+        <p>
+          Rather than attempting to reproduce face-to-face interaction,
+          Virfie asks how digital systems might create new forms of social
+          presence and togetherness that could not exist in physical space.
         </p>
 
       </section>
 
 
 
-      <!-- DESIGN PROCESS -->
+      <!-- PARTICIPATORY DESIGN -->
 
       <section class="case-section">
 
         <h2>Participatory Design</h2>
 
         <p>
-          We explored how people wanted to create and share
-          virtual scenarios together, using participatory design
-          to understand opportunities for richer remote interaction.
+          We conducted a participatory design process to surface how people
+          wish digital systems would reconstruct bodily cues, shared narratives,
+          and micro-interactions that support social bonding — treating these
+          desires as insights into the tacit mechanics of social cognition
+          under mediation.
         </p>
 
         <img
@@ -369,20 +190,44 @@
 
 
 
-      <!-- INTERACTION DESIGN -->
+      <!-- DESIGN INSIGHTS -->
 
       <section class="case-section">
 
-        <h2>Designing the Experience</h2>
+        <h2>From Research to Interaction Design</h2>
 
         <p>
-          Insights from the design process informed the interaction
-          model and experience of creating virtual group selfies.
+          Through iterative open coding, the team distilled three core
+          patterns that users consistently envisioned, and these patterns
+          directly informed the design of Virfie.
+        </p>
+
+        <img
+          src="assets/virfie/design-patterns.jpg"
+          alt="Three interaction patterns identified through participatory design"
+          class="case-image"
+        >
+
+      </section>
+
+
+
+      <!-- VIRFIE EXPERIENCE -->
+
+      <section class="case-section">
+
+        <h2>Designing Virfie</h2>
+
+        <p>
+          These insights were translated into a shared virtual experience
+          where participants could use their bodies, gestures, position,
+          and attention to collectively construct and interact with
+          virtual scenarios.
         </p>
 
         <img
           src="assets/virfie/virfie-interface.jpg"
-          alt="Virfie interaction design"
+          alt="Virfie virtual group selfie interface"
           class="case-image"
         >
 
@@ -397,14 +242,20 @@
         <h2>Building the Prototype</h2>
 
         <p>
-          Virfie was developed as a working web prototype that
-          combines real-time video communication with virtual
-          scene composition.
+          Virfie is a WebRTC-based web application that connects users
+          in the same room through peer-to-peer video streaming, reducing
+          server load.
+        </p>
+
+        <p>
+          It uses WebSockets for real-time scenario updates, and the client
+          extracts body parts from each video stream in real time using
+          TensorFlow.js BodyPix.
         </p>
 
         <img
           src="assets/virfie/virfie-system.jpg"
-          alt="Virfie prototype"
+          alt="Virfie technical system and prototype"
           class="case-image"
         >
 
@@ -412,15 +263,84 @@
 
 
 
-      <!-- PUBLICATION -->
+      <!-- SCENARIO SYSTEM -->
 
       <section class="case-section">
 
-        <h2>Publication</h2>
+        <h2>Scenario System</h2>
 
         <p>
-          Published in the Proceedings of IntelliSys 2024,
-          with earlier work presented at CHI 2022 Extended Abstracts.
+          A typical scenario configuration of Virfie shows how component
+          layers are drawn to the main canvas. Each scene contains a number
+          of properties including title, audio, users, overlays, triggers,
+          and background.
+        </p>
+
+        <img
+          src="assets/virfie/scenario-system.jpg"
+          alt="Virfie scenario configuration and component layers"
+          class="case-image"
+        >
+
+      </section>
+
+
+
+      <!-- PUBLICATIONS -->
+
+      <section class="case-section">
+
+        <h2>Publications</h2>
+
+        <h3>
+          IntelliSys 2024
+        </h3>
+
+        <p>
+          Im, H. et al. (2024).
+          Virfie: Enhancing Remote Togetherness with User-Created
+          Scenarios for Virtual Group Selfie.
+        </p>
+
+        <a
+          href="https://doi.org/10.1007/978-3-031-66336-9_44"
+          class="project-link"
+          target="_blank"
+        >
+          View publication →
+        </a>
+
+
+        <h3>
+          CHI 2022 Extended Abstracts
+        </h3>
+
+        <p>
+          Earlier work on Virfie was presented at
+          CHI 2022 Extended Abstracts.
+        </p>
+
+        <a
+          href="https://doi.org/10.1145/3491101.3519767"
+          class="project-link"
+          target="_blank"
+        >
+          View publication →
+        </a>
+
+      </section>
+
+
+
+      <!-- CREDITS -->
+
+      <section class="case-section">
+
+        <h2>Team</h2>
+
+        <p>
+          Hyerin Im, Taewan Kim, Eunhee Jung, Bonhee Ku,
+          Seungho Baek, Younkyung Lim, Tekjin Nam, Takyeon Lee
         </p>
 
       </section>
