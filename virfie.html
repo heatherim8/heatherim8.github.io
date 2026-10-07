@@ -2,252 +2,440 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Virfie — Heather Im</title>
+  <title>Virfie — Heather (Hyerin) Im</title>
 
   <style>
-    * {
-      box-sizing: border-box;
-    }
+
+    /* =========================
+       GLOBAL — SAME AS INDEX
+    ========================== */
 
     body {
       margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      color: #111;
-      background: #fff;
+      font-family: Inter, sans-serif;
+      background: #ffffff;
+      color: #111111;
+      line-height: 1.6;
     }
 
-    .case-study {
-      max-width: 1100px;
+    .container {
+      max-width: 980px;
       margin: 0 auto;
-      padding: 80px 40px 120px;
+      padding: 70px 28px 100px;
     }
 
-    .back-link {
-      display: inline-block;
-      margin-bottom: 80px;
-      color: #111;
+    a {
+      color: inherit;
+    }
+
+
+    /* =========================
+       HEADER — SAME AS INDEX
+    ========================== */
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 90px;
+    }
+
+    .name {
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    .name a {
       text-decoration: none;
-      border-bottom: 1px solid #111;
+    }
+
+    nav a {
+      margin-left: 24px;
+      text-decoration: none;
+      color: #555;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #000;
+    }
+
+
+    /* =========================
+       CASE STUDY HERO
+    ========================== */
+
+    .case-hero {
+      margin-bottom: 100px;
     }
 
     .project-tag {
-      font-size: 15px;
+      margin-bottom: 12px;
+      font-size: 13px;
       color: #777;
-      margin-bottom: 20px;
-    }
-
-    .case-hero {
-      margin-bottom: 120px;
     }
 
     .case-hero h1 {
-      font-size: clamp(48px, 7vw, 96px);
+      font-size: 32px;
       font-weight: 500;
-      letter-spacing: -0.04em;
-      margin: 0 0 20px;
-    }
-
-    .case-hero h2 {
-      font-size: 28px;
+      letter-spacing: 0;
       line-height: 1.3;
-      font-weight: 400;
-      max-width: 800px;
-      margin-bottom: 40px;
+      margin: 0 0 12px;
     }
 
-    .case-intro {
-      font-size: 24px;
-      line-height: 1.5;
+    .case-subtitle {
+      font-size: 18px;
+      font-weight: 400;
+      color: #555;
       max-width: 720px;
-      margin: 48px 0;
+      margin: 0 0 32px;
     }
+
+    .case-meta {
+      display: flex;
+      gap: 50px;
+      margin: 40px 0;
+      font-size: 14px;
+    }
+
+    .case-meta-item {
+      max-width: 260px;
+    }
+
+    .case-meta-label {
+      display: block;
+      color: #888;
+      font-size: 13px;
+      margin-bottom: 4px;
+    }
+
+
+    /* =========================
+       IMAGES
+    ========================== */
 
     .case-hero-image,
     .case-image {
       width: 100%;
       height: auto;
-      border-radius: 12px;
       display: block;
-      margin-top: 48px;
+      border-radius: 8px;
+      border: 1px solid rgba(0, 0, 0, 0.08);
     }
 
+    .case-hero-image {
+      margin-top: 50px;
+    }
+
+
+    /* =========================
+       CASE STUDY SECTIONS
+    ========================== */
+
     .case-section {
-      margin: 140px 0;
+      margin-top: 100px;
     }
 
     .case-section h2 {
-      font-size: 32px;
-      margin-bottom: 24px;
+      font-size: 18px;
+      font-weight: 600;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 12px;
+      margin-bottom: 30px;
+    }
+
+    .case-section h3 {
+      font-size: 18px;
+      font-weight: 500;
+      margin: 40px 0 12px;
     }
 
     .case-section p {
       max-width: 720px;
-      font-size: 18px;
-      line-height: 1.65;
-      color: #444;
+      margin: 0 0 20px;
+      font-size: 16px;
+      color: #555;
     }
 
+    .case-image {
+      margin-top: 36px;
+    }
+
+
+    /* =========================
+       BACK LINK
+    ========================== */
+
+    .back-link {
+      display: inline-block;
+      margin-bottom: 50px;
+      font-size: 15px;
+      color: #111;
+      text-decoration: none;
+      border-bottom: 1px solid #111;
+    }
+
+    .back-link:hover {
+      opacity: 0.5;
+    }
+
+
+    /* =========================
+       FOOTER
+    ========================== */
+
+    footer {
+      margin-top: 100px;
+      padding-top: 30px;
+      border-top: 1px solid #eee;
+      color: #888;
+      font-size: 13px;
+    }
+
+
+    /* =========================
+       MOBILE
+    ========================== */
+
     @media (max-width: 700px) {
-      .case-study {
-        padding: 40px 20px 80px;
+
+      .container {
+        padding: 40px 20px 70px;
+      }
+
+      header {
+        margin-bottom: 60px;
+      }
+
+      nav {
+        display: none;
+      }
+
+      .case-hero h1 {
+        font-size: 38px;
+      }
+
+      .case-meta {
+        flex-direction: column;
+        gap: 18px;
       }
 
       .case-hero {
-        margin-bottom: 80px;
+        margin-bottom: 70px;
       }
 
       .case-section {
-        margin: 90px 0;
-      }
-
-      .case-hero h2 {
-        font-size: 22px;
-      }
-
-      .case-intro {
-        font-size: 20px;
+        margin-top: 70px;
       }
     }
+
   </style>
+
 </head>
 
 
 <body>
 
-  <main class="case-study">
-
-    <a href="index.html" class="back-link">
-      ← Back to home
-    </a>
+  <div class="container">
 
 
-    <!-- HERO -->
+    <!-- HEADER -->
 
-    <section class="case-hero">
+    <header>
 
-      <div class="project-tag">
-        ✶ Interaction Design · Social Computing · 2022–2024
+      <div class="name">
+        <a href="index.html">
+          Heather (Hyerin) Im
+        </a>
       </div>
 
-      <h1>Virfie</h1>
+      <nav>
 
-      <h2>
-        Enhancing remote togetherness through virtual group selfies
-      </h2>
+        <a href="index.html#work">
+          Work
+        </a>
 
-      <p class="case-intro">
-        What happens to our sense of togetherness when being together
-        becomes a screen?
-      </p>
+        <a href="mailto:hyelin1122@gmail.com">
+          Email
+        </a>
 
-      <img
-        src="assets/virfie/virfie-hero.jpg"
-        alt="Virfie virtual group selfie experience"
-        class="case-hero-image"
-      >
+        <a href="#" target="_blank">
+          CV
+        </a>
 
-    </section>
+      </nav>
 
-
-    <!-- OVERVIEW -->
-
-    <section class="case-section">
-
-      <h2>Overview</h2>
-
-      <p>
-        As remote interaction becomes part of everyday life, physical
-        presence is increasingly translated into fragments — gestures,
-        gaze, movement, and attention mediated through a screen.
-      </p>
-
-      <p>
-        Virfie explores what is lost in this translation, and what new
-        forms of presence might emerge from it.
-      </p>
-
-    </section>
+    </header>
 
 
-    <!-- PARTICIPATORY DESIGN -->
 
-    <section class="case-section">
-
-      <h2>Participatory Design</h2>
-
-      <p>
-        We conducted a participatory design process to understand how
-        people wanted digital systems to reconstruct bodily cues,
-        shared narratives, and micro-interactions that support social bonding.
-      </p>
-
-      <img
-        src="assets/virfie/participatory-design.jpg"
-        alt="Virfie participatory design process"
-        class="case-image"
-      >
-
-    </section>
+    <main>
 
 
-    <!-- DESIGN -->
+      <!-- BACK -->
 
-    <section class="case-section">
-
-      <h2>Designing Virfie</h2>
-
-      <p>
-        Through iterative analysis, we identified three recurring patterns
-        that directly informed the interaction design of Virfie.
-      </p>
-
-      <img
-        src="assets/virfie/virfie-interface.jpg"
-        alt="Virfie interface"
-        class="case-image"
-      >
-
-    </section>
+      <a href="index.html#work" class="back-link">
+        ← Back to work
+      </a>
 
 
-    <!-- PROTOTYPE -->
 
-    <section class="case-section">
+      <!-- HERO -->
 
-      <h2>Building the Prototype</h2>
+      <section class="case-hero">
 
-      <p>
-        Virfie is a WebRTC-based web application that connects users
-        through peer-to-peer video streaming. The prototype uses real-time
-        body segmentation to compose participants into shared virtual scenes.
-      </p>
+        <div class="project-tag">
+          ✶ Interaction Design · Social Computing · 2022–2024
+        </div>
 
-      <img
-        src="assets/virfie/virfie-system.jpg"
-        alt="Virfie prototype system"
-        class="case-image"
-      >
+        <h1>
+          Virfie
+        </h1>
 
-    </section>
+        <p class="case-subtitle">
+          Enhancing remote togetherness through
+          user-created scenarios for virtual group selfies.
+        </p>
 
 
-    <!-- PUBLICATIONS -->
+        <div class="case-meta">
 
-    <section class="case-section">
+          <div class="case-meta-item">
+            <span class="case-meta-label">Role</span>
+            Interaction Design · UX Research · Prototyping
+          </div>
 
-      <h2>Publications</h2>
+          <div class="case-meta-item">
+            <span class="case-meta-label">Context</span>
+            KAIST CIxD Lab
+          </div>
 
-      <p>
-        IntelliSys 2024 · CHI 2022 Extended Abstracts
-      </p>
+          <div class="case-meta-item">
+            <span class="case-meta-label">Year</span>
+            2022–2024
+          </div>
 
-    </section>
+        </div>
 
 
-  </main>
+        <img
+          src="assets/virfie/virfie-hero.jpg"
+          alt="Virfie virtual group selfie experience"
+          class="case-hero-image"
+        >
+
+      </section>
+
+
+
+      <!-- OVERVIEW -->
+
+      <section class="case-section">
+
+        <h2>Overview</h2>
+
+        <p>
+          Virfie explores how virtual group selfies can support
+          creative expression, social connection, and a sense of
+          togetherness in remote settings.
+        </p>
+
+      </section>
+
+
+
+      <!-- DESIGN PROCESS -->
+
+      <section class="case-section">
+
+        <h2>Participatory Design</h2>
+
+        <p>
+          We explored how people wanted to create and share
+          virtual scenarios together, using participatory design
+          to understand opportunities for richer remote interaction.
+        </p>
+
+        <img
+          src="assets/virfie/participatory-design.jpg"
+          alt="Virfie participatory design process"
+          class="case-image"
+        >
+
+      </section>
+
+
+
+      <!-- INTERACTION DESIGN -->
+
+      <section class="case-section">
+
+        <h2>Designing the Experience</h2>
+
+        <p>
+          Insights from the design process informed the interaction
+          model and experience of creating virtual group selfies.
+        </p>
+
+        <img
+          src="assets/virfie/virfie-interface.jpg"
+          alt="Virfie interaction design"
+          class="case-image"
+        >
+
+      </section>
+
+
+
+      <!-- PROTOTYPE -->
+
+      <section class="case-section">
+
+        <h2>Building the Prototype</h2>
+
+        <p>
+          Virfie was developed as a working web prototype that
+          combines real-time video communication with virtual
+          scene composition.
+        </p>
+
+        <img
+          src="assets/virfie/virfie-system.jpg"
+          alt="Virfie prototype"
+          class="case-image"
+        >
+
+      </section>
+
+
+
+      <!-- PUBLICATION -->
+
+      <section class="case-section">
+
+        <h2>Publication</h2>
+
+        <p>
+          Published in the Proceedings of IntelliSys 2024,
+          with earlier work presented at CHI 2022 Extended Abstracts.
+        </p>
+
+      </section>
+
+
+    </main>
+
+
+
+    <footer>
+      © 2026 Hyerin Im
+    </footer>
+
+
+  </div>
 
 </body>
 
