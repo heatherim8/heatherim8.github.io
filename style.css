@@ -491,11 +491,21 @@ footer {
    VIRFIE PAGE ONLY
 ======================================== */
 
-.virfie-page .case-hero-image {
-  width: 100%;
-  max-width: 900px;
+/* VIRFIE HERO IMAGE */
+
+.virfie-hero-image {
+  display: block;
+  width: 60%;
   height: auto;
-  margin: 50px auto 0;
+  margin: 50px 0 0;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+   @media (max-width: 700px) {
+  .virfie-hero-image {
+    width: 100%;
+  }
 }
 
 .virfie-page .case-image {
